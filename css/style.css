@@ -58,3 +58,35 @@ footer ul {
   display: inline-block;
   vertical-align: top;
 }
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  width: 33%;
+  margin: 0 auto;
+  padding: 1;
+}
+
+.rose {
+  grid-area: rose;
+}
+
+.adult {
+  grid-area: adult;
+}
+.workGrid {
+  display: grid;
+  grid-template-areas: 'rose rose rose rose rose';
+  grid-template-areas: 'adult adult adult adult'
+}
+
+@media only screen and (max-width: 600px) {
+.flexContainer {
+  flex-direction: column;
+}
+.flexContainer div {
+  width: 100%;
+}
+}
